@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Modal, Spinner } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function ModalProcess(props) {
+function ModalLogin(props) {
     const [show, setShow] = useState(true);
 
     const [isError] = useState(props.error);
@@ -32,4 +32,4 @@ function ModalProcess(props) {
     return null;
 }
 
-export default ModalProcess;
+export default ModalLogin;

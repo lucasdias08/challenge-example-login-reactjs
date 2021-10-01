@@ -11,7 +11,7 @@ import firebase from '../../connection/firebase';
 
 export default function Login() {
 
-    const isLogged = localStorage.getItem("@zoly:user");
+    const isLogged = localStorage.getItem("@test:user");
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -32,7 +32,7 @@ export default function Login() {
             .auth()
             .signInWithEmailAndPassword(email, password)
             .then(data => {
-                localStorage.setItem("@zoly:user", JSON.stringify(data.user.email));
+                localStorage.setItem("@test:user", JSON.stringify(data.user.email));
 
                 setShowAwaitLogin(false);
                 history.push("/home");
@@ -52,7 +52,7 @@ export default function Login() {
     } else {
         return (
             <div className='d-flex flex-column justify-content-center align-items-center bg-light h-100'>
-                <h2 className="text-underline"><i>SCRP - Zoly</i></h2>
+                <h2 className="text-underline"><i>Login</i></h2>
                 <Form onSubmit={signIn} style={{ width: "50vh" }}>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Login</Form.Label>
