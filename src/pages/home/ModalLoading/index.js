@@ -12,7 +12,10 @@ function ModalLogin(props) {
             <Modal
                 show={show}
                 centered
-                onHide={isError ? () => setShow(false) : null}
+                onHide={isError ? () => {
+                    setShow(false);
+                    window.location.reload();
+                } : null}
                 aria-labelledby="example-modal-sizes-title-sm"
             >
                 <Modal.Header 

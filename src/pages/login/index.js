@@ -3,7 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 
 import { useHistory } from 'react-router';
 
-import ModalProcess from '../home/Modal';
+import ModalProcess from '../home/ModalLoading';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -18,8 +18,6 @@ export default function Login() {
 
     const [showAwaitLogin, setShowAwaitLogin] = useState(false);
     const [showFailedLogin, setShowFailedLogin] = useState(false);
-
-    const [errorCauseLogin, setErrorCauseLogin] = useState('');
 
     const history = useHistory();
 
@@ -41,7 +39,6 @@ export default function Login() {
                 //alert('Email ou senha inválidos. Tente novamente.');
 
                 setShowFailedLogin(true);
-                setErrorCauseLogin(error.message);
             });
     }
 
@@ -51,9 +48,9 @@ export default function Login() {
         return (null);
     } else {
         return (
-            <div className='d-flex flex-column justify-content-center align-items-center bg-light h-100'>
+            <div className='d-flex flex-column justify-content-center align-items-center bg-light h-100 w-100'>
                 <h2 className="text-underline"><i>Login</i></h2>
-                <Form onSubmit={signIn} style={{ width: "50vh" }}>
+                <Form onSubmit={signIn} style={{ width: "40vh" }}>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Login</Form.Label>
                         <Form.Control
@@ -84,8 +81,8 @@ export default function Login() {
                         ENTRAR
                     </Button>
                 </Form>
-                {showAwaitLogin && <ModalProcess title="Verificando os dados, por favor aguarde." />}
-                {showFailedLogin && <ModalProcess title={errorCauseLogin} error={true} />}
+                {showAwaitLogin && <ModalProcess title={"Verificando os dados, por favor aguarde."} />}
+                {showFailedLogin && <ModalProcess title={"Usuário e/ou senha inválidos!"} error={true} />}
             </div>
         );
     }

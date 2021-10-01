@@ -18,15 +18,14 @@ function ModalLogoff(props) {
             aria-labelledby="example-modal-sizes-title-sm"
         >
             <Modal.Header closeButton={true}>
-                <Modal.Title id="example-modal-sizes-title-sm">
-                    <small className="text-danger">
+                <Modal.Title className="d-flex w-100 align-items-center justify-content-center">
+                    <small className="text-danger w-100">
                         Deseja efetuar o LogOff?
                     </small>
                 </Modal.Title>
                 <Modal.Body>
-                    <div className="d-flex flex-column w-100">
                         <Button
-                            className="text-white w-100"
+                            className="text-white w-100 mr-5"
                             variant="danger"
                             data-toggle="tooltip"
                             data-placement="top"
@@ -34,7 +33,7 @@ function ModalLogoff(props) {
                             onClick={logoff}>
                             Sair
                         </Button>
-                    </div>
+                    
                 </Modal.Body>
             </Modal.Header>
         </Modal>
