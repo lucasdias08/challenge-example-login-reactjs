@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState } from 'react';
 
 import { Alert } from 'react-bootstrap';
-import { FaSearch, FaTimesCircle } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ModalLogoff from './ModalLogoff';
 

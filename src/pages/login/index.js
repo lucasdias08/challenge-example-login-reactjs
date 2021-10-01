@@ -58,8 +58,11 @@ export default function Login() {
                         <Form.Label>Login</Form.Label>
                         <Form.Control
                             onChange={(e) => setEmail(e.target.value)}
-                            type="email" placeholder="Insira seu Login"
-                            value={email} />
+                            type="email" 
+                            placeholder="Insira seu Login"
+                            value={email} 
+                            required
+                            />
                     </Form.Group>
 
                     <Form.Group controlId="formBasicPassword">
@@ -73,7 +76,9 @@ export default function Login() {
                             }}
                             type="password"
                             placeholder="Insira sua senha"
-                            value={password} />
+                            value={password} 
+                            required
+                            />
                     </Form.Group>
                     <Button className="w-100" type="submit" variant="success">
                         ENTRAR
