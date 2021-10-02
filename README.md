@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Primeiras considerações
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+APP ReactJS desenvolvido como teste de conhecimento. Tecnologias envolvidas: JavaScript(ES), Css, React, Firebase, Vercel e Cypress. Você pode clonar esse repositório e seguir os passos para testá-la, avaliá-la ou melhorá-la.
 
-## Available Scripts
+- Antes de iniciarmos, seria interessante estar bem familiarizado com as tecnologias supracitadas;
 
-In the project directory, you can run:
+- O projeto está hospedado para testes manuais e operacionais em:
+>https://example-login-reactjs.vercel.app/home
 
-### `yarn start`
+- Autenticação do Firebase utilizada. Campos email e senha, respectivamente:
+>test@test.com
+>123456
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Preparando ambiente
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- __1.__ Clone esse repositório e o abra em seu editor de texto preferido, caso queira;
 
-### `yarn test`
+- __2.__ Execute o comando 
+>npx cypress open
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- __3.__ Caso opte por executar localmente, execute 
+>npm run start;
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Justificativas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- O comando do item 2 executa a bilioteca de testes unitários automatizados. O flow em questão, quando a ferramenta abrir é: Simular os dados de login e senha para saber se há autenticação e, em seguida, executar o logoff via clicks no(s) botão(ões);
+- O comando do item 3 executa o software localmente, na porta 3000;
