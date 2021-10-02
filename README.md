@@ -1,6 +1,6 @@
 # Primeiras considerações
 
-APP ReactJS desenvolvido como teste de conhecimento. Tecnologias envolvidas: JavaScript(ES), Css, React, Firebase, Vercel e Cypress. Você pode clonar esse repositório e seguir os passos para testá-la, avaliá-la ou melhorá-la.
+APP ReactJS desenvolvido como teste de conhecimento. Tecnologias envolvidas: JavaScript(ES), Css, React, Firebase, Vercel e Cypress. Você pode clonar esse repositório e seguir os passos para testá-lo, avaliá-lo ou melhorá-lo.
 
 - Antes de iniciarmos, seria interessante estar bem familiarizado com as tecnologias supracitadas;
 
